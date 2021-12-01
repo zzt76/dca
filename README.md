@@ -3,15 +3,12 @@
 Official website for DCA and Vari dataset
 
 ## Abstract
-***
 In this work, we target at solving the problem of consistent depth estimation in complex scenes under various illumination conditions. The existing indoor datasets based on RGB-D sensors or virtual rendering have two critical limitations - sparse depth maps (NYU Depth V2) and non-photorealistic illumination (SUN CG, SceneNet RGB-D ). We propose to use internet-available 3D indoor scenes and manually tune their illuminations to render photorealistic RGB photos and their corresponding depth and BRDF maps, obtaining a new dataset called Various Illuminations (Vari). We propose a simple convolutional block named Dilated Cross Attention (DCA) by applying depthwise separable dilated convolution on encoded features to process global information and reduce parameters. Cross attention on these dilated features are performed to retain consistency of depth estimation under different illuminations. Our method is evaluated by comparing with state-of-the-art methods on Vari dataset and a significant improvement is observed quantitatively and qualitatively in our experimental results. We also conduct ablation study and finetune our model on NYU Depth V2 to validate the effectiveness of DCA block.
 
 ## Pretrained model
-***
 You can download the pretrained models on Vari and NYU dataset [here](https://1drv.ms/u/s!Al8Z5hpFSN2xgo4TG_mgioTtbLSRTg?e=t8XeqE).
 
 ## Inference
-***
 Download and move the pretrained weights to "./pretrained" directory.
 ### Predict RGB image from path or directory
 ```python
