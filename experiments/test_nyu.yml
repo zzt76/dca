@@ -1,0 +1,17 @@
+## trainer
+dataset: nyu
+run_train: False
+
+batch_size: 1
+# batch_size of test must be 1
+checkpoint_path: pretrained/dca_nyu.pth
+test_result_dir: results
+
+## dataloader
+test_list: data/nyu/test.txt
+height: 480
+width: 640
+
+min_depth: 0.001
+max_depth: 10
+do_flip: True

@@ -1,0 +1,36 @@
+## trainer
+dataset: nyu
+run_train: True
+num_epochs: 35
+
+## optimizer & scheduler
+lr: 0.0001
+weight_decay: 0.01
+resume_optimizer: False
+use_scheduler: True
+resume_scheduler: False
+accumulate_grad: False
+accumulate_steps: 4
+# accumulate grad or not
+diff_lr: False
+
+## checkpoint
+checkpoint_dir: checkpoints
+# checkpoint_name: checkpoint025.pth
+save_checkpoint_freq: 1
+keep_num_checkpoint: 100
+resume: yes
+
+## logger
+use_logger: True
+log_freq: 500
+visualize_freq: 1000
+val_dir: val
+
+## dataloader
+train_list: data/nyu/train.txt
+val_list: data/nyu/val.txt
+input_height: 416
+input_width: 544
+batch_size: 6
+do_aug: True
